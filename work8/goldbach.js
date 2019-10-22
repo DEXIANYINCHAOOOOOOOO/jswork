@@ -1,6 +1,6 @@
 function goldbach(){
     var value = document.getElementById('odd').value
-    if(value % 2 !== 0){
+    if(value % 2 !== 0 || value == 2){
         alert('请输入一个大于2的偶数')
         return false
     }
