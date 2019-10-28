@@ -29,9 +29,7 @@ function pi(num) {
         let  dividend = factorial(i)
         let divisor = oddFactorial(i)
         sum += (dividend/divisor)
-        console.log(sum)
     }
-    // return Math.PI
     return sum*2
 }
 calculate()
