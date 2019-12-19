@@ -46,7 +46,7 @@ function getRegMSg(name, tips) {
             break;
         case 'tel':
             reg = /^1[34578]\d{9}$/;
-            msg = {'success': '手机号输入正确', 'error': tips};
+            msg = {'success': '手机号码输入正确', 'error': tips};
             break;
         case 'email':
             reg = /^(\w+(\_|\-|\.)*)+@(\w+(\-)?)+(\.\w{2,})+$/;
@@ -63,5 +63,5 @@ function success(obj, msg) {
 
 function error(obj, msg) {
     obj.className = 'error';
-    obj.innerHTML = msg + ', 请重新输入';
+    obj.innerHTML = msg + '，请重新输入';
 }
