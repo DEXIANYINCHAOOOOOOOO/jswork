@@ -269,7 +269,7 @@
                 lineHeight: this.size + 'px',
                 top: this.getPos(x),
                 left: this.getPos(y)
-            },100);
+            }, 100);
             this.nums[x + '-' + y] = $num;
         },
         move: function(from, to) {
@@ -277,7 +277,7 @@
             var clean = this.nums[toIndex];
             this.nums[toIndex] = this.nums[fromIndex];
             delete this.nums[fromIndex];
-            var prefix = this.prefix + ' -num- ';
+            var prefix = this.prefix + '-num-';
             var pos = {top: this.getPos(to.x), left: this.getPos(to.y)};
             this.nums[toIndex].finish().animate(pos, 200, function () {
                 if (to.num > from.num) {
